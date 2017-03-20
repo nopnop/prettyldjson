@@ -1,0 +1,27 @@
+{
+  "name": "prettyldjson",
+  "version": "1.0.0",
+  "description": "Pretty json that supports line-delemited json stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jean Ponchon <jean.ponchon@novadiscovery.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopnop/prettyldjson.git"
+  },
+  "keywords": [
+    "json",
+    "pretty",
+    "line-delimited",
+    "ndjson",
+    "ldjson",
+    "stream"
+  ],
+  "bugs": {
+    "url": "https://github.com/nopnop/prettyldjson/issues"
+  },
+  "homepage": "https://github.com/nopnop/prettyldjson#readme"
+}
