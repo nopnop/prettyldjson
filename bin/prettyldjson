@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+const prettyldjson = require('..')
+const meow = require('meow')
+
+const cli = meow(`
+  Usage
+    $ prettyldjson
+
+  Options
+    --no-color  Disable color output
+
+  Examples
+    $ cat ndjson | prettyldjson
+`, {
+  alias: {
+    'h': 'help'
+  },
+  default: {
+    color: true
+  }
+})
+
+if (process.stdin.isTTY && !cli.flags.help) {
+  console.error('Error: You must pipe data to this utility')
+  cli.showHelp()
+}
+
+process.stdin
+  .pipe(prettyldjson(cli.flags))
+  .pipe(process.stdout)

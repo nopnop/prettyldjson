@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Pretty json that supports line-delemited json stream",
   "main": "index.js",
+  "bin": {
+    "prettyldjson": "./bin/prettyldjson"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/nopnop/prettyldjson/issues"
   },
-  "homepage": "https://github.com/nopnop/prettyldjson#readme"
+  "homepage": "https://github.com/nopnop/prettyldjson#readme",
+  "dependencies": {
+    "meow": "^3.7.0",
+    "prettyjson": "^1.2.1",
+    "split2": "^2.1.1",
+    "stream-combiner": "^0.2.2",
+    "through2": "^2.0.3"
+  }
 }
